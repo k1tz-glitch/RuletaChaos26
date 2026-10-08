@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ruletacaos",
+  "version": "${version}",
+  "name": "Ruleta Chaos",
+  "description": "Una ruleta automática que gira cada cierto tiempo y aplica efectos, desafíos, premios y caos a todos los jugadores. Versión para Minecraft 26.3.",
+  "authors": [
+    "Grok"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ruletacaos/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ruletacaos.RuletaChaos"
+    ],
+    "client": [
+      "com.ruletacaos.client.RuletaChaosClient"
+    ]
+  },
+  "mixins": [
+    "ruletacaos.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
