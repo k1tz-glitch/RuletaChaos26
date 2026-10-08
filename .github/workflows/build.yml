@@ -18,13 +18,13 @@ name: Build Mod
             java-version: '21'
             distribution: 'temurin'
 
-        - name: Build with Gradle
+        - name: Build
           run: |
             cd RuletaChaos26
             chmod +x gradlew
             ./gradlew build -x test
 
-        - name: Upload Mod JAR
+        - name: Upload
           uses: actions/upload-artifact@v4
           with:
             name: RuletaChaos-Mod
